@@ -19,10 +19,10 @@ let n = fullPrice*(rollback/100);
 console.log(n);
 
 
-//console.log(title = prompt("Как называется ваш проект?"));
-//console.log(screens = prompt("Какие типы экранов нужно разработать?", "Простые, Сложные, Интерактивные"));
-//console.log(screenPrice = prompt("Сколько будет стоить данная работа?", "12000"));
-//console.log(adaptive = confirm("Нужен ли адаптив на сайте?"));
+console.log(title = prompt("Как называется ваш проект?"));
+console.log(screens = prompt("Какие типы экранов нужно разработать?", "Простые, Сложные, Интерактивные"));
+console.log(screenPrice = prompt("Сколько будет стоить данная работа?", "12000"));
+console.log(adaptive = confirm("Нужен ли адаптив на сайте?"));
 let service1;
 console.log(service1 = prompt("Какой дополнительный тип услуги нужен?"));
 let servicePrice1;
