@@ -15,6 +15,34 @@ let conc2 = "Стоимость разработки сайта " + fullPrice + 
 console.log(conc2);
 console.log(screens.toLowerCase());
 console.log(screens.split(", "));
-let n;
-n = fullPrice*(rollback/100);
+let n = fullPrice*(rollback/100);
 console.log(n);
+
+
+//console.log(title = prompt("Как называется ваш проект?"));
+//console.log(screens = prompt("Какие типы экранов нужно разработать?", "Простые, Сложные, Интерактивные"));
+//console.log(screenPrice = prompt("Сколько будет стоить данная работа?", "12000"));
+//console.log(adaptive = confirm("Нужен ли адаптив на сайте?"));
+let service1;
+console.log(service1 = prompt("Какой дополнительный тип услуги нужен?"));
+let servicePrice1;
+console.log(servicePrice1 = +prompt("Сколько это будет стоить?"));
+let service2; 
+console.log(service2 = prompt("Какой дополнительный тип услуги нужен?"));
+let servicePrice2;
+console.log(servicePrice2 = +prompt("Сколько это будет стоить?"));
+
+fullPrice = screenPrice + servicePrice1 + servicePrice2;
+
+let servicePercentPrice = Math.ceil(fullPrice - n);
+console.log(servicePercentPrice);
+
+if (fullPrice >= 30000) {
+  console.log('Даём скидку 10%');
+} else if (fullPrice >= 15000 && fullPrice < 30000) {
+  console.log('Даём скидку 5%');
+} else if (fullPrice < 15000 && fullPrice >= 0) {
+  console.log('Скидка не предусмотрена');
+} else if (fullPrice < 0) {
+  console.log('Что-то пошло не так');
+}
