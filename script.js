@@ -1,9 +1,20 @@
-let  title;
-let  screens;
-let  screenPrice;
-let  rollback;
-let  fullPrice;
-let  adaptive;
-alert("hello world!");
-console.log("hello world!!!!1");
+let title = "Название проекта";
+let screens = "Простые, Сложные, Интерактивные";
+let screenPrice = 116;
+let rollback = 23;
+let fullPrice = 33333;
+let adaptive = false;
 
+console.log(typeof title);
+console.log(typeof fullPrice);
+console.log(typeof adaptive);
+console.log(screens.length);   
+let conc = "Стоимость верстки экранов " + screenPrice + " рублей/долларов/гривен/юани";
+console.log(conc);             
+let conc2 = "Стоимость разработки сайта " + fullPrice + " рублей/долларов/гривен/юани";
+console.log(conc2);
+console.log(screens.toLowerCase());
+console.log(screens.split(", "));
+let n;
+n = fullPrice*(rollback/100);
+console.log(n);
