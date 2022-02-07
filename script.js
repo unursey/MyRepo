@@ -88,12 +88,12 @@ const appData = {
     appData.logger();
   },
   logger: function () {
-    //console.log(appData.fullPrice);
-    //console.log(appData.servicePercentPrice);
+    console.log(appData.fullPrice);
+    console.log(appData.servicePercentPrice);
 
-    for (let key in appData) {
-      console.log(key, appData[key]);
-    }
+    // for (let key in appData) {
+    //   console.log(key, appData[key]);
+    // }
   },
 };
 
