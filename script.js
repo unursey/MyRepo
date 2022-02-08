@@ -11,12 +11,12 @@ const appData = {
   allServicePrices: 0,
   services: {},
 
-  isString: function (str) {
-    return (
-      /(?=.*\d)(?=.*[a-zA-Zа-яёА-ЯЁ])/i.test(str) ||
-      /(?=.*[a-zA-Zа-яёА-ЯЁ])/i.test(str)
-    );
-  },
+  // isString: function (str) {
+  //  return (
+  //     /(?=.*\d)(?=.*[a-zA-Zа-яёА-ЯЁ])/i.test(str) ||
+  //     /(?=.*[a-zA-Zа-яёА-ЯЁ])/i.test(str)
+  //   );
+  // },
 
   isNumber: function (num) {
     return !isNaN(parseFloat(num)) && isFinite(num);
@@ -27,13 +27,13 @@ const appData = {
         "Как называется ваш проект?",
         "Калькулятор верстки"
       );
-    } while (!appData.isString(appData.title));
+    } while (appData.isNumber(appData.title));
 
     for (let i = 0; i < 2; i++) {
       let name = 0;
       do {
         name = prompt("Какие типы экранов нужно разработать?");
-      } while (!appData.isString(name));
+      } while (appData.isNumber(name));
 
       let n = 0;
 
@@ -48,7 +48,7 @@ const appData = {
       let name = 0;
       do {
         name = prompt("Какой дополнительный тип услуги нужен?");
-      } while (!appData.isString(name));
+      } while (appData.isNumber(name));
 
       let n = 0;
       do {
