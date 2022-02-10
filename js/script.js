@@ -1,31 +1,37 @@
 "use strict";
-const title1 = document.getElementsByTagName("h1");
-console.log(title1[0]);
+const title1 = document.getElementsByTagName("h1")[0];
+console.log(title1);
 
-const buttons = document.getElementsByClassName("handler_btn");
-console.log(buttons);
+const buttonStart = document.getElementsByClassName("handler_btn")[0];
+const buttonReset = document.getElementsByClassName("handler_btn")[1];
+console.log(buttonStart);
+console.log(buttonReset);
 
-const plus = document.querySelector(".screen-btn");
-console.log(plus);
+const screenBtn = document.querySelector(".screen-btn");
+console.log(screenBtn);
 
-const element1 = document.querySelectorAll(".other-items.percent");
-console.log(element1);
+const otherItemsPercen = document.querySelectorAll(".other-items.percent");
+console.log(otherItemsPercen);
 
-const element2 = document.querySelectorAll(".other-items.number");
-console.log(element2);
+const otherItemsNumber = document.querySelectorAll(".other-items.number");
+console.log(otherItemsNumber);
 
-const input1 = document.querySelector(".rollback input[type=range]");
-console.log(input1);
+const rollbackInput = document.querySelector(".rollback input[type=range]");
+console.log(rollbackInput);
 
 const input2 = document.querySelector(".rollback .range-value");
 console.log(input2);
 
-const input3 = document.getElementsByClassName("total-input");
-console.log(input3[0]);
-console.log(input3[1]);
-console.log(input3[2]);
-console.log(input3[3]);
-console.log(input3[4]);
+const total = document.getElementsByClassName("total-input")[0];
+const totalCount = document.getElementsByClassName("total-input")[1];
+const totalCountOther = document.getElementsByClassName("total-input")[2];
+const totalFullCount = document.getElementsByClassName("total-input")[3];
+const totalCountRollback = document.getElementsByClassName("total-input")[4];
+console.log(total);
+console.log(totalCount);
+console.log(totalCountOther);
+console.log(totalFullCount);
+console.log(totalCountRollback);
 
 let screen = document.querySelectorAll(".screen");
 console.log(screen);
