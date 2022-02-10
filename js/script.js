@@ -19,8 +19,8 @@ console.log(otherItemsNumber);
 const rollbackInput = document.querySelector(".rollback input[type=range]");
 console.log(rollbackInput);
 
-const input2 = document.querySelector(".rollback .range-value");
-console.log(input2);
+const rollbackRangeValue = document.querySelector(".rollback .range-value");
+console.log(rollbackRangeValue);
 
 const total = document.getElementsByClassName("total-input")[0];
 const totalCount = document.getElementsByClassName("total-input")[1];
