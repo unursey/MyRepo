@@ -53,6 +53,9 @@ const appData = {
 
   logger2: function () {
     rollbackRangeValue.textContent = rollbackInput.value + "%";
+    totalCountRollback.value = Math.ceil(
+      appData.fullPrice - appData.fullPrice * (rollbackInput.value / 100)
+    );
   },
 
   showResult: function () {
@@ -141,7 +144,7 @@ const appData = {
     appData.rollback = +rollbackInput.value;
 
     appData.servicePercentPrice = Math.ceil(
-      appData.fullPrice - appData.fullPrice * (appData.rollback / 100)
+      appData.fullPrice - appData.fullPrice * (rollbackInput.value / 100)
     );
 
     for (let screen of appData.screens) {
