@@ -191,6 +191,9 @@ const appData = {
       item.checked = false;
     });
 
+    rollbackInput.value = 0;
+    rollbackRangeValue.textContent = rollbackInput.value + "%";
+
     for (let i = 1; i < screens.length; i++) {
       screens[i].remove();
     }
