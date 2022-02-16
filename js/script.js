@@ -218,7 +218,6 @@ const appData = {
     this.disabledButton2();
 
     this.addScreens();
-    console.log(appData);
   },
 
   start: function () {
