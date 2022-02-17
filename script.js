@@ -46,53 +46,30 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   };
 
-  const newDiv = new DomElement(".block", 200, 200, "red", 25);
-  const newPar = new DomElement("#best", 100, 200, "yellow", 25);
+  const newDiv = new DomElement(".block", 200, 200, "pink", 25);
+  const newPar = new DomElement("#best", 100, 200, "violet", 25);
 
-  /*const square = new DomElement(
-    ".square",
-    100,
-    100,
-    "red",
-    15,
-    "absolute",
-    0,
-    0
-  );*/
+  const sq = new DomElement(".square", 100, 100, "black", 15, "absolute", 0, 0);
+  const square = sq.creatBlock();
 
   document.body.append(newDiv.creatBlock());
   document.body.append(newPar.creatBlock());
 
-  //document.body.append(square.creatBlock());
-  //console.log(square);
+  document.body.append(square);
+  console.log(square);
 
-  /*document.addEventListener("keydown", (event) => {
-    const sq = document.querySelector("div");
-    let top = 0;
-    let left = 0;
-
+  document.addEventListener("keydown", (event) => {
     if (event.key == "ArrowRight") {
-      left = left + 10;
-      sq.style.left = left + "px";
-      left++;
-      console.log("право");
+      square.style.left = parseFloat(square.style.left) + 10 + "px";
     }
     if (event.key == "ArrowDown") {
-      top = top + 10;
-      sq.style.top = top + "px";
-      top++;
+      square.style.top = parseFloat(square.style.top) + 10 + "px";
     }
-    // if (event.key === "ArrowUp") {
-    //  sq.style.top = left + "px";
-    //}
-    //if (event.key === "ArrowLeft") {
-    //  sq.style.left = left + "px";
-    //  console.log("лево");
-    //}
-  });*/
-
-  //ArrowDown 40
-  //ArrowUp 38
-  //ArrowLeft 37
-  //ArrowRight 39
+    if (event.key === "ArrowUp") {
+      square.style.top = parseFloat(square.style.top) - 10 + "px";
+    }
+    if (event.key === "ArrowLeft") {
+      square.style.left = parseFloat(square.style.left) - 10 + "px";
+    }
+  });
 });
